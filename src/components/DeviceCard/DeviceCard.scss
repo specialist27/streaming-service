@@ -1,11 +1,11 @@
 .device-card {
   display: grid;
   row-gap: fluid(30, 20);
-  padding: fluid(40, 24);
+  padding: fluid(50, 24);
   border: var(--border);
   border-radius: var(--border-radius-l);
-  background: 
-    linear-gradient(222deg, rgba(229, 0, 0, 0.50) -208.03% rgba(229, 0, 0, 0) 41.32%),
+  background:
+    linear-gradient(222deg, rgba(229, 0, 0, 0.50) -208.03%, rgba(229, 0, 0, 0.00) 41.32%),
     var(--color-black-06);
 
   @include laptop {
@@ -29,7 +29,7 @@
     @include laptop {
       border-radius: var(--border-radius-m);
     }
-    
+
     @include mobile {
       border-radius: var(--border-radius-s);
     }
