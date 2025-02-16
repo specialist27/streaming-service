@@ -10,7 +10,7 @@ const Plans = () => {
       titleId="plans-id"
       description="Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!"
     >
-      <Grid column={3}>
+      <Grid columns={3}>
         {planGroups[0].items.map((planItem, index) => (
           <PlanCard 
             {...planItem}
