@@ -26,7 +26,6 @@ class Slider {
     this.nextButtonElement = this.navigationElement.querySelector(this.selectors.nextButton)
     this.paginationElement = this.navigationElement.querySelector(this.selectors.pagination)
     this.scrollbarElement = this.rootElement.querySelector(this.selectors.scrollbar)
-    
     this.init()
   }
 

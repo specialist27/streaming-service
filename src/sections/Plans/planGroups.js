@@ -1,60 +1,60 @@
 const planGroups = [
   {
-    title: "Monthly",
+    title: 'Monthly',
     isActive: true,
     items: [
       {
-        title: "Basic Plan",
-        description: "Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.",
+        title: 'Basic Plan',
+        description: 'Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.',
         price: {
-          value: "$9.99",
-          label: "/month",
-        }
+          value: '$9.99',
+          label: '/month',
+        },
       },
       {
-        title: "Standard Plan",
-        description: "Access to a wider selection of movies and shows, including most new releases and exclusive content.",
+        title: 'Standard Plan',
+        description: 'Access to a wider selection of movies and shows, including most new releases and exclusive content',
         price: {
-          value: "$12.99",
-          label: "/month",
-        }
+          value: '$12.99',
+          label: '/month',
+        },
       },
       {
-        title: "Premium Plan",
-        description: "Access to a widest selection of movies and shows, including all new releases and Offline Viewing.",
+        title: 'Premium Plan',
+        description: 'Access to a widest selection of movies and shows, including all new releases and Offline Viewing',
         price: {
-          value: "$14.99",
-          label: "/month",
-        }
+          value: '$14.99',
+          label: '/month',
+        },
       },
     ]
   },
   {
-    title: "Annual",
+    title: 'Yearly',
     items: [
       {
-        title: "Basic Plan",
-        description: "Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.",
+        title: 'Basic Plan',
+        description: 'Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.',
         price: {
-          value: "$99.99",
-          label: "/year",
-        }
+          value: '$99.99',
+          label: '/year',
+        },
       },
       {
-        title: "Standard Plan",
-        description: "Access to a wider selection of movies and shows, including most new releases and exclusive content.",
+        title: 'Standard Plan',
+        description: 'Access to a wider selection of movies and shows, including most new releases and exclusive content',
         price: {
-          value: "$129.99",
-          label: "/year",
-        }
+          value: '$129.99',
+          label: '/year',
+        },
       },
       {
-        title: "Premium Plan",
-        description: "Access to a widest selection of movies and shows, including all new releases and Offline Viewing.",
+        title: 'Premium Plan',
+        description: 'Access to a widest selection of movies and shows, including all new releases and Offline Viewing',
         price: {
-          value: "$149.99",
-          label: "/year",
-        }
+          value: '$149.99',
+          label: '/year',
+        },
       },
     ]
   },

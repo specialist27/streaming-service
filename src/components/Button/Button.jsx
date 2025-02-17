@@ -20,7 +20,6 @@ const Button = (props) => {
      */
     iconPosition = 'before',
     hasFillIcon,
-    IconFallbackSVG,
     extraAttrs,
   } = props
 
@@ -35,7 +34,6 @@ const Button = (props) => {
       className="button__icon"
       name={iconName}
       hasFill={hasFillIcon}
-      FallbackSVG={IconFallbackSVG}
     />
   )
 

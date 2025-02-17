@@ -1,9 +1,9 @@
-import Grid from "@/components/Grid"
-import Section from "@/layouts/Section"
-import PlanCard from "@/components/PlanCard"
-import planGroups from "./planGroups"
-import TabsNavigation from "@/components/Tabs/components/TabsNavigation"
-import Tabs from "@/components/Tabs"
+import Section from '@/layouts/Section'
+import Grid from '@/components/Grid'
+import planGroups from './planGroups'
+import PlanCard from '@/components/PlanCard'
+import TabsNavigation from '@/components/Tabs/components/TabsNavigation'
+import Tabs from '@/components/Tabs'
 
 const Plans = () => {
   const tabsTitle = 'plans-tabs'
@@ -15,23 +15,23 @@ const Plans = () => {
       titleId="plans-id"
       description="Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!"
       actions={(
-        <TabsNavigation 
+        <TabsNavigation
           id={tabsNavigationId}
           title={tabsTitle}
           items={planGroups}
         />
       )}
     >
-      <Tabs 
+      <Tabs
         title={tabsTitle}
         navigationTargetElementId={tabsNavigationId}
-        items={planGroups.map((planGroup, index) => ({
+        items={planGroups.map((planGroup) => ({
           title: planGroup.title,
           isActive: planGroup.isActive,
           children: (
             <Grid columns={3}>
               {planGroup.items.map((planItem, index) => (
-                <PlanCard 
+                <PlanCard
                   {...planItem}
                   key={index}
                 />
