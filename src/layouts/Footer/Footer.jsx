@@ -12,7 +12,7 @@ const Footer = () => {
       links: ['Gernes', 'Trending', 'New Release', 'Popular'],
     },
     {
-      title: 'Shows',
+      title: 'Popular',
       links: ['Gernes', 'Trending', 'New Release', 'Popular'],
     },
     {
@@ -70,7 +70,7 @@ const Footer = () => {
         </nav>
         <div className="footer__extra">
           <p className="footer__copyright">
-            @<time dateTime="2024">2024</time> StreamVibe. All Rights Reserved.
+            @<time dateTime="2023">2023</time> streamvib, All Rights Reserved
           </p>
           <div className="footer__extra-links">
             {extraLinks.map((link, index) => (

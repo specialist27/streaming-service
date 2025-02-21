@@ -1,55 +1,61 @@
-import { Image } from 'minista'
 import './MovieBannerCard.scss'
-import Button from '../Button'
+import { Image } from 'minista'
+import Button from '@/components/Button'
+import classNames from 'classnames'
 
 const MovieBannerCard = (props) => {
   const {
     title,
+    titleId,
+    TitleTag = 'h2',
     description,
-    imgSrc
+    imgSrc,
+    isSmallPaddingY = false,
   } = props
 
   return (
     <div className="movie-banner-card">
-      <Image 
+      <Image
         className="movie-banner-card__image"
         src={imgSrc}
       />
-
-      <div className="movie-banner-card__inner">
+      <div
+        className={classNames('movie-banner-card__inner', {
+          'movie-banner-card__inner--small-padding-y': isSmallPaddingY,
+        })}
+      >
         <div className="movie-banner-card__body">
-          <h2 className="movie-banner-card__title h3">
+          <TitleTag
+            className="movie-banner-card__title h3"
+            id={titleId}
+          >
             {title}
-          </h2>
-
+          </TitleTag>
           <div className="movie-banner-card__description hidden-mobile">
             <p>{description}</p>
           </div>
         </div>
-
         <footer className="movie-banner-card__footer">
-          <Button 
+          <Button
             className="movie-banner-card__play-button"
             iconName="play"
+            hasFillIcon
             label="Play Now"
           />
-
           <div className="movie-banner-card__actions">
-            <Button 
+            <Button
               mode="black-06"
               iconName="plus"
-              label="Add to Playlist"
+              label="Add to playlist"
               isLabelHidden
             />
-            
-            <Button 
+            <Button
               mode="black-06"
               iconName="like"
               label="Like"
               isLabelHidden
             />
-            
-            <Button 
+            <Button
               mode="black-06"
               iconName="volume"
               label="Mute"

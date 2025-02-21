@@ -6,16 +6,21 @@
   &__header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     column-gap: 16px;
 
     @include mobile {
       flex-direction: column;
-      align-items: center;
+      align-items: start;
       row-gap: 20px;
     }
 
-    &:has(.section__desctiption) {
+    &:has(.section__description) {
       align-items: end;
+
+      @include mobile {
+        align-items: start;
+      }
     }
   }
 

@@ -2,8 +2,6 @@ import './Header.scss'
 import Logo from '@/components/Logo'
 import classNames from 'classnames'
 import Button from '@/components/Button'
-import { ReactComponent as SVGSearch } from '@/assets/icons/search.svg'
-import { ReactComponent as SVGNotification } from '@/assets/icons/notification.svg'
 import BurgerButton from '@/components/BurgerButton'
 
 const Header = (props) => {
@@ -32,10 +30,10 @@ const Header = (props) => {
   ]
 
   return (
-    <header 
+    <header
       className={classNames('header', {
-        'is-fixed': isFixed
-      })} 
+        'is-fixed': isFixed,
+      })}
       data-js-overlay-menu=""
     >
       <div className="header__inner container">
@@ -43,8 +41,7 @@ const Header = (props) => {
           className="header__logo"
           loading="eager"
         />
-
-        <dialog 
+        <dialog
           className="header__overlay-menu-dialog"
           data-js-overlay-menu-dialog=""
         >
@@ -64,7 +61,6 @@ const Header = (props) => {
               ))}
             </ul>
           </nav>
-
           <div className="header__actions">
             <Button
               className="header__button"
@@ -72,7 +68,6 @@ const Header = (props) => {
               isLabelHidden
               mode="transparent"
               iconName="search"
-              IconFallbackSVG={SVGSearch}
             />
             <Button
               className="header__button"
@@ -80,15 +75,13 @@ const Header = (props) => {
               isLabelHidden
               mode="transparent"
               iconName="notification"
-              IconFallbackSVG={SVGNotification}
             />
           </div>
         </dialog>
-
-        <BurgerButton 
+        <BurgerButton
           className="header__burger-button visible-tablet"
           extraAttrs={{
-            'data-js-overlay-menu-burger-button': ''
+            'data-js-overlay-menu-burger-button': '',
           }}
         />
       </div>

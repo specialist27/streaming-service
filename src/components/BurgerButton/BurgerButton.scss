@@ -1,7 +1,7 @@
 .burger-button {
   @include flex-center(true);
   @include square(51px);
-  
+
   padding: 0;
   background-color: var(--color-black-10);
   border: var(--border-width-m) solid var(--color-black-15);
@@ -16,21 +16,21 @@
     .burger-button__line {
       stroke-dasharray: 90 207;
       stroke-dashoffset: -134;
-    
+
       &--2 {
         stroke-dasharray: 1 60;
-        stroke-dashoffset: -30;  
+        stroke-dashoffset: -30;
       }
     }
   }
-  
+
   &:not(.is-active) {
     .burger-button__line--3 {
       stroke-dasharray: 30 207;
       stroke-dashoffset: -30;
     }
   }
-  
+
   &__line {
     fill: none;
     stroke: var(--color-white);
@@ -40,9 +40,9 @@
     transition:
       stroke-dasharray var(--transition-duration-longer) cubic-bezier(0.4, 0, 0.2, 1),
       stroke-dashoffset var(--transition-duration-longer) cubic-bezier(0.4, 0, 0.2, 1);
-  
-      &--2 {
-        stroke-dasharray: 60 60;  
-      }
+
+    &--2 {
+      stroke-dasharray: 60 60;
+    }
   }
 }

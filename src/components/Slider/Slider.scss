@@ -7,6 +7,14 @@
     }
   }
 
+  &__item {
+    width: auto;
+  }
+
+  &__navigation {
+    margin-top: fluid(40, 24);
+  }
+
   &__scrollbar {
     @include abs-x;
 
